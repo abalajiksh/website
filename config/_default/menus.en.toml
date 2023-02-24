@@ -23,7 +23,7 @@
 
 [[footer]]
   name = "Privacy"
-  url = "https://external-link"
+  pageRef = "privacy-policy"
 
 [[footer]]
   name = "Impressum"

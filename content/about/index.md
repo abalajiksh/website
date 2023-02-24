@@ -6,6 +6,7 @@ draft: false
 {{< typeit 
   tag=h1
   lifeLike=true
+  loop=true
 >}}
 I just don't know anymore.
 {{< /typeit >}}
