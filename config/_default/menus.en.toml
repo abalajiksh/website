@@ -29,9 +29,9 @@
   name = "Impressum"
   pageRef = "impressum"
 
-[[footer]]
-  name = "Terms of Use"
-  url = "https://external-link"
+#[[footer]]
+#  name = "Terms of Use"
+#  url = "https://external-link"
 
 #[[main]]
 #  name = "Blog"
