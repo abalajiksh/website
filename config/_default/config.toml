@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-baseURL = $CF_PAGES_URL
+# baseURL = $CF_PAGES_URL
 defaultContentLanguage = "en"
 languageCode = "en"
 
