@@ -6,15 +6,15 @@ weight = 1
 rtl = false
 
 title = "Ashwin Balaji"
-logo = "img/ijdna.png"
+logo = "img/dont_know.png"
 description = "I just don't know anymore."
-copyright = "Copy, _right?_ :thinking_face:"
+copyright = "<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>."
 
 dateFormat = "2 Jan, 2006"
 
 [author]
   name = "Ashwin Balaji"
-  image = "img/ijdna.png"
+  image = "img/dont_know.png"
   headline = "I just don't know anymore."
   bio = "I'm Masters student at Ruprecht Karl Universität Heidelberg. My primary interests are Concept of Time, Quantum Gravity and Lattice Field Thoery."
   links = [
