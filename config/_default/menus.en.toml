@@ -9,6 +9,35 @@
 # By default the menu is ordered alphabetically. This can be
 # overridden by providing a weight value. The menu will then be
 # ordered by weight from lowest to highest.
+# config/_default/menus.toml
+
+[[main]]
+  name = "Blog"
+  pageRef = "posts"
+  weight = 10
+
+[[main]]
+  name = "Topics"
+  pageRef = "topics"
+  weight = 20
+
+[[main]]
+  pre = "github"
+  name = "GitHub"
+  url = "https://github.com/nunocoracao/blowfish"
+  weight = 30
+
+[[footer]]
+  name = "Privacy"
+  url = "https://external-link"
+
+[[footer]]
+  name = "Impressum"
+  url = "https://external-link"
+
+[[footer]]
+  name = "Terms of Use"
+  url = "https://external-link"
 
 #[[main]]
 #  name = "Blog"
@@ -47,10 +76,10 @@
 #  pageRef = "categories"
 #  weight = 20
 
-#[[main]]
-#  name = "Tags"
-#  pageRef = "tags"
-#  weight = 30
+[[main]]
+ name = "Tags"
+ pageRef = "tags"
+ weight = 30
 
 
 # -- Footer Menu --
