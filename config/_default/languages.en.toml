@@ -8,7 +8,7 @@ rtl = false
 title = "Ashwin Balaji"
 logo = "img/dont_know.png"
 description = "I just don't know anymore."
-copyright = "![Creative Commons](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)."
+copyright = "![Creative Commons](https://i.creativecommons.org/l/by/4.0/88x31.png) [This work is licensed under a Creative Commons Attribution 4.0 International License.](http://creativecommons.org/licenses/by/4.0/)"
 
 dateFormat = "2 Jan, 2006"
 
