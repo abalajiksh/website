@@ -42,11 +42,23 @@
 #  name = "Parent"
 #  weight = 20
 
-#[[main]]
-#  name = "example sub-menu 1"
-#  parent = "Parent"
-#  pageRef = "posts"
-#  weight = 20
+[[main]]
+  name = "Musings"
+  parent = "Blog"
+  pageRef = "categories/Musings"
+  weight = 20
+
+[[main]]
+  name = "Physics"
+  parent = "Blog"
+  pageRef = "categories/Physics"
+  weight = 10
+
+[[main]]
+  name = "Mathematics"
+  parent = "Blog"
+  pageRef = "categories/Mathematics"
+  weight = 30
 
 #[[main]]
 #  name = "example sub-menu 2"
