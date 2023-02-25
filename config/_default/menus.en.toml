@@ -55,6 +55,18 @@
   weight = 10
 
 [[main]]
+  name = "Computers"
+  parent = "Blog"
+  pageRef = "categories/Computers"
+  weight = 60
+
+[[main]]
+  name = "Book Reviews"
+  parent = "Blog"
+  pageRef = "categories/Book-Review"
+  weight = 40
+
+[[main]]
   name = "Mathematics"
   parent = "Blog"
   pageRef = "categories/Mathematics"
