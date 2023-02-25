@@ -1,6 +1,6 @@
 ---
 title: "Why Are Irrational Numbers Termed as Irrational?"
-date: 2023-02-25T02:55:26+01:00
+date: 2021-11-27T02:55:26+01:00
 draft: false
 categories: ["Mathematics"]
 description: "It would be irrational to speak of irrational numbers without describing the history of why they got ..."
@@ -8,6 +8,10 @@ tags: ["Pythagoras", "Irrational-Numbers", "Transcendental-Numbers"]
 ---
 
 ![Irrational Number](img/irrational.jpeg)
+
+{{< alert >}}
+**Warning!** This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn't feel like abandoning it. Please don't disappoint me by becoming fond of this.
+{{< /alert >}}
 
 {{<katex>}}
 
