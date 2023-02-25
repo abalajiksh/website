@@ -1,5 +1,5 @@
 ---
-title: "Hyper v Is Underrated"
+title: "Hyper-V Is Underrated"
 date: 2022-06-30T10:01:24+01:00
 draft: false
 categories: ["Computers"]
@@ -104,7 +104,7 @@ Untick the box indicated below, and click on `Change Installation source ...` bu
 
 Select the ISO file location where you have downloaded the Ubuntu. Its name most probably would be `ubuntu-22.04-desktop-amd64.iso`:
 
-![](YLPSwGZb9E.png)
+![](img/YLPSwGZb9E.png)
 
 Next, you may click on `Create Virtual Machine` button, or select `More options` to configure:
 
