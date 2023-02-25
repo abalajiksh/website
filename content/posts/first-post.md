@@ -1,7 +1,7 @@
 ---
 title: "First Post"
 date: 2023-02-24T13:46:42+01:00
-draft: false
+draft: true
 tags: ["tag1", "tag2"]
 ---
 {{< katex >}}
