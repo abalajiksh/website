@@ -9,6 +9,11 @@ tags: ["Srimad-Bhagavatam", "Cosmology", "Scientific-Method"]
 
 ![SBC under Scientific Scrutiny](img/sbc.gif)
 
+{{< alert >}}
+**Warning!** This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn't feel like abandoning it. Please don't disappoint me by becoming fond of this.
+{{< /alert >}}
+
+
 In this article, I propose a series of steps that can help us prove the existence of certain elements mentioned in Srimad Bhagavatam Cosmology(SBC) from a Scientific Perspective. SBC is a vast model with a lot of features that sound like a Fantasy novel at the first glance. However, the Eastern Traditions hold that this model is the reality present in the cosmos. As a physicist, I cannot accept or deny this claim directly without evidence. So, I have come up with a series of steps that can be pursued to test a particular hypothesis of the SBC model: specifically, the planets with different oceans, let us take the milk/honey/liquor ocean as an example.
 
 When it comes to astronomy and cosmology, all we have are two things, Gravitational Effects(like waves, lensing, etc) and Electromagnetic Effects(waves, redshift etc) that provide us with observation. To detect a particular molecule that is present in abundance necessitates a unique signature of the said molecule that can be imprinted either Gravitationally or Electromagnetically. Using Gravitation is a big no as the effects are very minimal and the noise is high. Using Electromagnetism, we have a special tool called Spectroscopy. This method will help us identify if a particular molecule exists in a said location by analysing the emitted light from the source. Each molecule will have a significant peak resonance in the EM wave that it emits(and the frequencies it doesn’t emit) which is the unique fingerprint in detecting the molecule’s presence in the given source.
