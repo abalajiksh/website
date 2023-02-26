@@ -22,7 +22,7 @@ disableImageZoom = false
 
 highlightCurrentMenuArea = true
 smartTOC = true
-smartTOCHideUnfocusedChildren = true
+smartTOCHideUnfocusedChildren = false
 
 [header]
   layout = "basic" # valid options: basic, fixed
