@@ -38,6 +38,7 @@ The catch here is the diplomacy coming from *Aes Sedai*. Here is a quote by Tam 
 
 > "An *Aes Sedai* never lies, but the truth she speaks may not be the truth you think you hear."
 > -—Tam al'Thor
+
 They cannot speak a lie, but they can manipulate people into thinking by stating a list of facts (which they believe to be true, but needn’t be one) that are disconnected but consensus implies the connectivity and extracts some extra information which they never presented. Or perhaps, they might word carefully for an oath but might miss out on some crucial elements which most people overlook. This makes people wary of *Aes Sedai* and keeps away from them as much as possible and also avoids their interference in their lives. The novel series itself has a lot of indicators and explicit dialogues that contemplate that the *Daes Dae'mar* is invented by *Aes Sedai* to keep the strings of politics in their control. The conversations between two *Aes Sedai* are seldom clear to anyone who overhears it and only the sisters (as they refer themselves internally) are the only ones capable of comprehending what unspoken words mean and what spoken words actually meant. Here is more information from the official Wiki for the series on *Aes Sedai* ([^3]) and their three oaths ([^4]).
 
 ## So What?
