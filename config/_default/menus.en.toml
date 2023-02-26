@@ -38,6 +38,11 @@
   pageRef = "about"
   weight = 10
 
+[[main]]
+  name = "Featured"
+  pageRef = "categories/Featured"
+  weight = 30
+
 [[footer]]
   name = "Privacy"
   pageRef = "privacy-policy"

@@ -2,7 +2,7 @@
 title: "An Analogy to Dive Deep Into the Nature of Time"
 date: 2022-02-10T16:42:53+01:00
 draft: false
-categories: ["Physics"]
+categories: ["Physics", "Featured"]
 description: "Time is a concept many philosophers and physicists pondered upon for centuries. It still remains mysterious besides the metaphysical claims of a few..."
 tags: ["Time", "Initial-Conditions", "Cellular Automata", "Lee-Smolin", "Causal-Sets", "John-Conway", "Game-of-Life"]
 ---
