@@ -21,7 +21,7 @@ Chilling Adventures of Sabrina is set in the fictional town of Greendale. It is 
 
 ## Occult Sciences
 
-![](img/2015-05-09_ent_9265290_I1.png)
+![](img/2015-05-09_ent_9265290_I1.jpeg)
 
 The series is filled with witchcraft, potion-making, necromancy, conjuring, demonology, alchemy, sacred geometry and other references to the actual cult group's rituals and ideologies. Not being an expert in such West-based sciences, we can state that the East shares such ideas in the form of tantric worships, ghost exorcism and a lot more.
 
