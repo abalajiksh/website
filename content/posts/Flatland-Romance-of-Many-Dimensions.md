@@ -2,7 +2,7 @@
 title: "📙 Flatland: Romance of Many Dimensions"
 date: 2021-11-29T08:41:37+01:00
 draft: false
-categories: ["Book-Review"]
+categories: ["Reviews", "Book-Review"]
 description: ""
 tags: ["Dimensions","Fictional-Space"]
 ---

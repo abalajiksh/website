@@ -2,7 +2,7 @@
 title: "📙 Midnight Library: a Factual Fiction"
 date: 2022-02-11T09:55:52+01:00
 draft: false
-categories: ["Book-Review"]
+categories: ["Reviews", "Book-Review"]
 description: "Nora Seed(the protagonist) is unhappy in her life and attempts suicide. She ends up at The Midnight Library, where she can try out several versions of her life. She discovers ..."
 tags: ["Multiverse", "Fiction", "Death"]
 ---
