@@ -136,4 +136,4 @@
 [[footer]]
   name = "Blog"
   pageRef = "posts"
-   = 10
+  weight = 10
