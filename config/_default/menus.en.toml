@@ -23,12 +23,13 @@
 
 [[main]]
   name = "Philosophy"
+  parent = "Blog"
   pageRef = "philosophy"
   weight = 30
 
 [[main]]
   name = "Metaphysics"
-  parent = "Philosophy"
+  parent = "Blog"
   pageRef = "categories/Metaphysics"
   weight = 60
 
@@ -125,9 +126,14 @@
 [[footer]]
   name = "Tags"
   pageRef = "tags"
-  weight = 20
+  weight = 30
 
 [[footer]]
   name = "Categories"
   pageRef = "categories"
-  weight = 10
+  weight = 20
+
+[[footer]]
+  name = "Blog"
+  pageRef = "posts"
+   = 10
