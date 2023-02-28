@@ -1,5 +1,5 @@
 ---
-title: "Simulating Physics in a Computer Another Matrix"
+title: "Simulating Physics in a Computer: Another Matrix"
 date: 2022-03-10T11:06:44+01:00
 draft: false
 categories: ["Philosophy", "Metaphysics"]
