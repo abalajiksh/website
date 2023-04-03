@@ -7,7 +7,10 @@ description: ""
 tags: ["Gravity", "MOND", "Dark-Matter"]
 ---
 
-{{< katex >}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 
 {{< alert >}}
 **Warning!** This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn't feel like abandoning it. Please don't disappoint me by becoming fond of this.
@@ -132,6 +135,7 @@ with \\(\mu\\) being the *interpolating* function with the properties follows:
 $$
 \mu(x)= \begin{cases}1 & \text { for } x \gg 1 \\ x & \text { for } x \ll 1\end{cases}
 $$
+
 Two such interpolating functions can be written as follows:
 $$
 \mu\left(\frac{a}{a_0}\right)=\frac{1}{1+\frac{a_0}{a}} \text { and } \mu\left(\frac{a}{a_0}\right)=\sqrt{\frac{1}{1+\left(\frac{a_0}{a}\right)^2}}
