@@ -70,7 +70,7 @@ Let us try to get up and running the Ubuntu Desktop22.04 LTS version using Hyper
 
 If you are a fond of terminal like me, do the following:
 
-![PowerShell-Enable-Hyper-V.gif](https://img.ashwinbalaji.xyz/images/2023/02/25/PowerShell-Enable-Hyper-V.gif)
+![PowerShell-Enable-Hyper-V.gif](https://github.com/abalajiksh/gifabxyz/raw/main/PowerShell-Enable-Hyper-V.gif)
 
 Enable Hyper-V using Powershell by running the below command:
 
@@ -78,7 +78,7 @@ Enable Hyper-V using Powershell by running the below command:
 
 Or follow the steps below:
 
-![Enable-Hyper-V.gif](https://img.ashwinbalaji.xyz/images/2023/02/25/Enable-Hyper-V.gif)
+![Enable-Hyper-V.gif](https://github.com/abalajiksh/gifabxyz/raw/main/Enable-Hyper-V.gif)
 
 After all these steps, the Windows power move has to be followed, RESTARTING the PC!!
 
@@ -124,7 +124,7 @@ Now you can either click on `Connect` to boot up the VM or click `Edit settings 
 
 The above is the VM settings window to modify the resources to be allocated to the VM. I wish to change the Memory(RAM) and Processor(# of cores) settings to my liking. Do not overdo else you might be in trouble, Check the resources you got by doing the following:
 
-![Check-System-Resources.gif](https://img.ashwinbalaji.xyz/images/2023/02/25/Check-System-Resources.gif)
+![Check-System-Resources.gif](https://github.com/abalajiksh/gifabxyz/raw/main/Check-System-Resources.gif)
 
 `msinfo32` is the text to type in the Run window. Make note of the Logical Processors and RAM Memory size and make sure to use at most half of whatever you have got to ensure system stability.
 

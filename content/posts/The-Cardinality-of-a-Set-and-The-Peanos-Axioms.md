@@ -7,7 +7,7 @@ description: "Counting is one of the most intuitive concepts we learn and use fr
 tags: ["Counting", "Peano", "Nature-of-Mathematics"]
 ---
 
-![Counting-is-Easy.-Says-Who.gif](https://img.ashwinbalaji.xyz/images/2023/02/25/Counting-is-Easy.-Says-Who.gif)
+![Counting-is-Easy.-Says-Who.gif](https://github.com/abalajiksh/gifabxyz/raw/main/Counting-is-Easy.-Says-Who.gif)
 
 {{< alert >}}
 **Warning!** This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn't feel like abandoning it. Please don't disappoint me by becoming fond of this.

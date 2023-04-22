@@ -7,7 +7,7 @@ description: "Every Pop-Science book speaks about Quantum Entanglement, the Heis
 tags: ["Quantum-Physics"]
 ---
 
-![A-Secret--2.gif](https://img.ashwinbalaji.xyz/images/2023/02/26/A-Secret--2.gif)
+![A-Secret--2.gif](https://raw.githubusercontent.com/abalajiksh/gifabxyz/main/A-Secret--2.gif)
 
 {{< alert >}}
 **Warning!** This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn't feel like abandoning it. Please don't disappoint me by becoming fond of this.
