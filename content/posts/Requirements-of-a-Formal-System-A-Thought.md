@@ -3,7 +3,7 @@ title: "Requirements of a Formal System: A Thought"
 date: 2022-07-08T08:44:34+02:00
 draft: false
 categories: [Musings", "Mathematics"]
-description: ""
+description: "In summary, Godel's Proof discusses the concept that every axiom of a formal system should be a tautology, and that tautologousness is a hereditary property. It further states that every theorem properly derived from the axioms should also be a tautology, and therefore any formula that is not a tautology cannot be a theorem. This raises questions about the nature of tautologousness and the consistency of axioms in a formal system. The book also explores how formal systems are designed, verified, and potentially modified to create new systems, using examples such as Euclid's axioms and the development of elliptical and hyperbolic geometries. Godel's Proof challenges the possibility of complete formalization of a logical system using bivalent truth theory and raises the question of whether other systems, such as tetra-lemma, can be used for formalization. This leads to considerations about duality, oneness, and the nature of material and spiritual worlds. The book suggests that further exploration and effort may reveal new insights into these concepts."
 tags: ["formal-system", "Gödel's Proof", "Kurt Gödel", "self-evident", "tautology"]
 ---
 
