@@ -18,6 +18,7 @@ I believe that by unveiling our ignorance on igonorance, we make the first step 
 I'm enrolled to Masters in Physics program at Ruprecht Karl Universität Heidelberg. My primary interests that I wish to explore are 
 - Concept of Time, 
 - Quantum Gravity, 
+- Philosophy of Physics,
 - Lattice Field Theory.
 
 ## Long Version
