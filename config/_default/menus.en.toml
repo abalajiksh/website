@@ -142,3 +142,23 @@
   name = "Blog"
   pageRef = "posts"
   weight = 10
+
+[[footer]]
+  name = "Twitch"
+  url = "https://www.twitch.tv/ashwinbalajiab"
+  weight = 40
+
+[[footer]]
+  name = "YouTube"
+  url = "https://external-link"
+  weight = 50
+
+[[footer]]
+  name = "Instagram"
+  url = "https://external-link"
+  weight = 60
+
+[[footer]]
+  name = "TikTok"
+  url = "https://external-link"
+  weight = 70
