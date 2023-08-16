@@ -13,7 +13,7 @@ Germany
 
 **Contact:**  
 Telefon: On Request  
-Email: s[dot]ashwinbalaji[at]proton[dot]me  
+Email: s[dot]ashwinbalaji[at]gmx[dot]de
 
 Responsible for the content regarding paragraph 55 Abs. 2 RStV:
 
