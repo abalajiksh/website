@@ -8,19 +8,17 @@ draft: false
 
 This website was made by  
 Ashwin Balaji  
-Sternstraße 34,  
-67063, Ludwigshafen am Rhein  
+Address on Request  
 Germany
 
 **Contact:**  
 Telefon: On Request  
-Email: s[dot]ashwinbalaji[dot]de[at]gmail[dot]com  
+Email: s[dot]ashwinbalaji[at]proton[dot]me  
 
 Responsible for the content regarding paragraph 55 Abs. 2 RStV:
 
 Ashwin Balaji  
-Sternstraße 34,  
-67063, Ludwigshafen am Rhein  
+Address on Request 
 Germany
 
 ## 1. Contents of the website
