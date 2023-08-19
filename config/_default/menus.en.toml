@@ -34,6 +34,12 @@
   weight = 60
 
 [[main]]
+  name = "Video Essay"
+  parent = "Blog"
+  pageRef = "categories/video-essay"
+  weight = 70
+
+[[main]]
   name = "About Me"
   pageRef = "about"
   weight = 10
