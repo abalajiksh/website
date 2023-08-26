@@ -176,23 +176,3 @@
   name = "Blog"
   pageRef = "posts"
   weight = 10
-
-[[footer]]
-  name = "Twitch"
-  url = "https://www.twitch.tv/ashwinbalajiab"
-  weight = 40
-
-[[footer]]
-  name = "YouTube"
-  url = "https://www.youtube.com/@ijustdontknowanymore0/featured"
-  weight = 50
-
-[[footer]]
-  name = "Instagram"
-  url = "https://www.instagram.com/ashwinbalaji00/"
-  weight = 60
-
-[[footer]]
-  name = "TikTok"
-  url = "https://tiktok.com/@ashwinbalaji02"
-  weight = 70
