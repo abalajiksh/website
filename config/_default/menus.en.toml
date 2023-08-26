@@ -49,33 +49,7 @@
   pageRef = "categories/Featured"
   weight = 30
 
-[[main]]
-  name = "Social"
-  weight = 40
 
-[[main]]
-  name = "Twitch"
-  parent = "Social"
-  url = "https://www.twitch.tv/ashwinbalajiab"
-  weight = 10
-
-[[main]]
-  name = "YouTube"
-  parent = "Social"
-  url = "https://www.youtube.com/@ijustdontknowanymore0/featured"
-  weight = 20
-
-[[main]]
-  name = "Instagram"
-  parent = "Social"
-  url = "https://www.instagram.com/ashwinbalaji00/"
-  weight = 30
-
-[[main]]
-  name = "TikTok"
-  parent = "Social"
-  url = "http://tiktok.com/@ashwinbalaji02"
-  weight = 40
 
 [[footer]]
   name = "Privacy"
