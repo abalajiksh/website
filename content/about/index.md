@@ -21,6 +21,8 @@ I'm enrolled to Masters in Physics program at Ruprecht Karl Universität Heidelb
 - Philosophy of Physics,
 - Lattice Field Theory.
 
+I am categorized as INTP in MBTI Personality Index. Infer what you will of this information.
+
 ## Long Version
 
 will post soon
