@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="light"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>MOND: A Gentle Introduction &middot; Ashwin Balaji</title>
+  <meta name="title" content="MOND: A Gentle Introduction &middot; Ashwin Balaji" />
+  
+  <meta name="description" content="I just don&#39;t know anymore." />
+  <meta name="keywords" content="Gravity, MOND, Dark-Matter, " />
+  
+  
+  <link rel="canonical" href="//localhost:1313/posts/mond-a-gentle-introduction/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.55800f303ced971710fcec8763e3a2eb63b3fb2606988f7139a956fe0aea85d71ed6a30e6173ab797d2f7ffa06850e79622ce5d198b483b0c942f51afefdd89f.css"
+    integrity="sha512-VYAPMDztlxcQ/OyHY&#43;Oi62Oz&#43;yYGmI9xOalW/grqhdce1qMOYXOreX0vf/oGhQ55Yizl0Zi0g7DJQvUa/v3Ynw==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.cfe7a5826ca891c0d4396747d37fe961dd1e874835dfe591dd8962a103a8c837840acbe40df492814ea34a1e888ec717b3a505bf2765e3f1eafaab2daf157c1c.js"
+    integrity="sha512-z&#43;elgmyokcDUOWdH03/pYd0eh0g13&#43;WR3YlioQOoyDeECsvkDfSSgU6jSh6IjscXs6UFvydl4/Hq&#43;qstrxV8HA==" data-copy="" data-copied=""></script>
+  
+  <script src="/js/zoom.min.js"></script>
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="MOND: A Gentle Introduction" />
+<meta property="og:description" content="Warning!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/posts/mond-a-gentle-introduction/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-12-06T14:00:02+01:00" />
+<meta property="article:modified_time" content="2021-12-06T14:00:02+01:00" />
+
+
+  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="MOND: A Gentle Introduction"/>
+<meta name="twitter:description" content="Warning!"/>
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "",
+    "name": "MOND: A Gentle Introduction",
+    "headline": "MOND: A Gentle Introduction",
+    
+    "abstract": "Warning!",
+    "inLanguage": "en",
+    "url" : "\/\/localhost:1313\/posts\/mond-a-gentle-introduction\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Ashwin Balaji"
+    },
+    "copyrightYear": "2021",
+    "dateCreated": "2021-12-06T14:00:02\u002b01:00",
+    "datePublished": "2021-12-06T14:00:02\u002b01:00",
+    
+    "dateModified": "2021-12-06T14:00:02\u002b01:00",
+    
+    "keywords": ["Gravity","MOND","Dark-Matter"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1943"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="Ashwin Balaji" />
+  
+  
+  
+  <link href="https://github.com/abalajiksh" rel="me" />
+  
+  
+  <link href="https://steamcommunity.com/id/ashwin-balaji/" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    
+    
+    <div>
+        <a href="/" class="flex">
+            <span class="sr-only">Ashwin Balaji</span>
+
+            <img src="/img/dont_know.png" width="750" height="750"
+                class="logo max-h-[5rem] max-w-[5rem] object-scale-down object-left nozoom" alt="Ashwin Balaji" />
+
+        </a>
+    </div>
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Ashwin Balaji</a>
+
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/about/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="">
+        About Me
+    </p>
+</a>
+
+
+            
+             
+  <div>
+  <div class="cursor-pointer flex items-center nested-menu">
+    
+    <a  href="/posts/"   class="text-base font-medium text-gray-500 hover:text-gray-900" title="">
+      Blog
+    </a>
+    <span>
+      
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+    </span>
+  </div>
+  <div class="absolute menuhide">
+    <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        
+        <a href="/categories/physics/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
+            Physics
+          </p>
+        </a>
+        
+        <a href="/categories/musings/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
+            Musings
+          </p>
+        </a>
+        
+        <a href="/categories/mathematics/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
+            Mathematics
+          </p>
+        </a>
+        
+        <a href=""  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
+            Philosophy
+          </p>
+        </a>
+        
+        <a href="/categories/computers/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
+            Computers
+          </p>
+        </a>
+        
+        <a href="/categories/metaphysics/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
+            Metaphysics
+          </p>
+        </a>
+        
+        <a href="/categories/video-essay/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
+            Video Essay
+          </p>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            
+            
+  <a href="/categories/featured/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="">
+        Featured
+    </p>
+</a>
+
+
+            
+             
+  <div>
+  <div class="cursor-pointer flex items-center nested-menu">
+    
+    <a  class="text-base font-medium text-gray-500 hover:text-gray-900" title="">
+      Reviews
+    </a>
+    <span>
+      
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+    </span>
+  </div>
+  <div class="absolute menuhide">
+    <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        
+        <a href="/categories/book-review/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
+            Book Reviews
+          </p>
+        </a>
+        
+        <a href="/categories/media-review/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
+            Media Reviews
+          </p>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400 h-12"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button">
+                    <div class="flex items-center justify-center h-12 dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden h-12 dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" style="margin-right:5px">
+                <div class="flex items-center justify-center h-12 dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden h-12 dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" for="menu-controller" class="block">
+            <input type="checkbox" id="menu-controller" class="hidden" />
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-auto overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li>
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/about/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="">
+            About Me
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                     
+  <li class="mt-1">
+    <a class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="">
+            Blog
+        </p>
+        <span>
+            
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+        </span>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/categories/physics/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="">
+            Physics
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/categories/musings/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="">
+            Musings
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/categories/mathematics/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="">
+            Mathematics
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href=""  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="">
+            Philosophy
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/categories/computers/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="">
+            Computers
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/categories/metaphysics/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="">
+            Metaphysics
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/categories/video-essay/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="">
+            Video Essay
+        </p>
+    </a>
+</li>
+
+<li class="mb-2"></li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/categories/featured/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="">
+            Featured
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                     
+  <li class="mt-1">
+    <a class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="">
+            Reviews
+        </p>
+        <span>
+            
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+        </span>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/categories/book-review/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="">
+            Book Reviews
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/categories/media-review/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="">
+            Media Reviews
+        </p>
+    </a>
+</li>
+
+<li class="mb-2"></li>
+
+
+
+                    
+                    
+
+                </ul>
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      MOND: A Gentle Introduction
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  &lt;time datetime=&#34;2021-12-06 14:00:02 &amp;#43;0100 CET&#34;&gt;6 Dec, 2021&lt;/time&gt;&lt;span class=&#34;px-2 text-primary-500&#34;&gt;&amp;middot;&lt;/span&gt;&lt;span title=&#34;Reading time&#34;&gt;10 mins&lt;/span&gt;
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/physics/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Physics
+  </span>
+</span>
+
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/gravity/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Gravity
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/mond/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    MOND
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/dark-matter/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Dark-Matter
+  </span>
+</span>
+
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+  
+  </header>
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+     <div
+      class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky  lg:top-10 ">
+
+         <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#on-dark-matter">On Dark Matter</a></li>
+    <li><a href="#einsteins-theory-of-relativity-a-calibration-step">Einstein&rsquo;s Theory of Relativity: A Calibration Step</a></li>
+    <li><a href="#mond-basics">MOND: Basics</a></li>
+    <li><a href="#mond-compatibility">MOND: Compatibility</a></li>
+    <li><a href="#quantum-gravity-and-recent-developments">Quantum Gravity and Recent Developments</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#on-dark-matter">On Dark Matter</a></li>
+    <li><a href="#einsteins-theory-of-relativity-a-calibration-step">Einstein&rsquo;s Theory of Relativity: A Calibration Step</a></li>
+    <li><a href="#mond-basics">MOND: Basics</a></li>
+    <li><a href="#mond-compatibility">MOND: Compatibility</a></li>
+    <li><a href="#quantum-gravity-and-recent-developments">Quantum Gravity and Recent Developments</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+ 
+<script>
+  (function () {
+    var $toc = $('#TableOfContents');
+    if ($toc.length > 0) {
+      var $window = $(window);
+
+      function onScroll() {
+        var currentScroll = $window.scrollTop();
+        var h = $('.anchor');
+        var id = "";
+        h.each(function (i, e) {
+          e = $(e);
+          if (e.offset().top - $(window).height()/3 <= currentScroll) {
+            id = e.attr('id');
+          }
+        });
+        var active = $toc.find('a.active');      
+        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+        active.each(function (i, e) {
+          
+            $(e).removeClass('active');
+          
+        });
+        $toc.find('a[href="#' + id + '"]').addClass('active')
+        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+          $(e).children('a').parents('ul').show();          
+        });
+      }
+
+      $window.on('scroll', onScroll);
+      $(document).ready(function () {
+        
+        onScroll();
+      });
+    }
+  })();
+</script>
+   </div>
+      </div>
+      
+      <div class="min-w-0 min-h-0 max-w-prose">
+        
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
+  >
+
+  <span
+    
+      class="text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center"
+    >
+
+    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
+
+  </span>
+
+
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    ><strong>Warning!</strong> This article is one among many salvaged from my previous blog! It is not on par with my demands of quality but I didn&rsquo;t feel like abandoning it. Please don&rsquo;t disappoint me by becoming fond of this.</span>
+</div>
+
+<div id="on-dark-matter" class="anchor"></div>
+<h2 class="relative group">On Dark Matter 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#on-dark-matter" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        srcset="
+        /img/trace_hua1c1e6c3189fcb2e1bbfa8283d71c905_5758_330x0_resize_box_3.png 330w,
+        /img/trace_hua1c1e6c3189fcb2e1bbfa8283d71c905_5758_660x0_resize_box_3.png 660w,
+        /img/trace_hua1c1e6c3189fcb2e1bbfa8283d71c905_5758_1024x0_resize_box_3.png 1024w,
+        /img/trace_hua1c1e6c3189fcb2e1bbfa8283d71c905_5758_1320x0_resize_box_3.png 2x"
+        src="/img/trace_hua1c1e6c3189fcb2e1bbfa8283d71c905_5758_660x0_resize_box_3.png"
+        alt="Playing with a stone fastened to a rope."
+      />
+      
+      <figcaption>Playing with a stone fastened to a rope.</figcaption>
+    </figure>
+  
+
+</p>
+<p>Consider a stone fastened to rope. Imagine you are holding the rope in the other end. Now, start rotating with it, but slowly. What do you notice? The stone drags itself along the path on the ground. Now make the rotation faster, the stone starts to levitate in your reference frame.</p>
+<p>Now this levitation can be taken to be as stability of rotational motion. A lesson here is that we need sufficient tangential force for stability in the rotational motion. Now enough physicising with small objects. Let&rsquo;s move to something big. Let us take a galaxy for example.</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        srcset="
+        /img/pexels-pixabay-2150_hu8fd3395daed447c8c30dd782faab7121_243576_330x0_resize_q75_box.jpeg 330w,
+        /img/pexels-pixabay-2150_hu8fd3395daed447c8c30dd782faab7121_243576_660x0_resize_q75_box.jpeg 660w,
+        /img/pexels-pixabay-2150_hu8fd3395daed447c8c30dd782faab7121_243576_1024x0_resize_q75_box.jpeg 1024w,
+        /img/pexels-pixabay-2150_hu8fd3395daed447c8c30dd782faab7121_243576_1320x0_resize_q75_box.jpeg 2x"
+        src="/img/pexels-pixabay-2150_hu8fd3395daed447c8c30dd782faab7121_243576_660x0_resize_q75_box.jpeg"
+        alt="A Typical Galaxy (Colouring is an Artist&amp;rsquo;s Work)"
+      />
+      
+      <figcaption>A Typical Galaxy (Colouring is an Artist&rsquo;s Work)</figcaption>
+    </figure>
+  
+
+</p>
+<p>Here, the stars and planets are moving around a huge massive black hole in the centre of the galaxy. Let us write down Newton&rsquo;s Gravitational Law for such a system.</p>
+<p>$$ F_{\text {grav }}=G_{\text {newt }} \frac{m_b m_s}{r_{b s}^2} $$</p>
+<p>where \( F_{\text {grav }} \) is the gravitational force between the black hole and the star, \( G_{\text {newt }} \) is the Newtonian gravitational constant, \( m_b \) is the mass of black-hole, \(m_s \) is the mass of the star under study, \(r_{b s} \) is the distance between the black-hole(or centre of the galaxy) and the star under study.</p>
+<p>The mass of the black hole and the star is computable using other experimental methods which we shall not discuss here. The distance is computable by using some trigonometry and we are aware of the Newtonian Gravitational constant. Hence, we can compute the gravitational force acting on our star.</p>
+<p>Interestingly, the force value thus computed is far lower than the required force to keep the trajectory of the stars stable. But observations prove that the stars are moving in the rotational motion in a stable manner. So, what did we get wrong?</p>
+<p>Physicists proposed that there is a hidden mass that doesn&rsquo;t emit light which contributes to the extra gravitational force necessary for the stability of the stars moving around the galaxy. Mathematically, we have the following:</p>
+<p>$$ F_{\text {neces }}=F_{\text {grav }}+F_{\text {dm }} $$</p>
+<p>where \(F_{\text {neces }}\) is the necessary force for the stable orbit of stars moving in the galaxy, \(F_{\text {grav }}\) is the gravitational force due to the gravity generated by the mass of black hole and the star under the study, \(F_{\text {dm }}\) is the gravitational force generated by the mass of dark matter and the star. So, we can write(with some caveats):</p>
+<p>$$ F_{\mathrm{dm}}=G_{\text {newt }} \frac{m_{d m} m_s}{r_{b s}^2} $$</p>
+<p>which, when using the above relations, we obtain this information:</p>
+<p>$$ m_{d m}=\left(\frac{r_{b s}^2}{G_{\text {newt }} m_s}\right)\left(F_{\text {neces }}-F_{\text {grav }}\right) $$</p>
+<p>Now, \( F_{\text {neces }}\) is just the centripetal force on the star, hence, we can write the following:</p>
+<p>$$ F_{\text {neces }}=\frac{m_s v_s^2}{r_{b s}} $$</p>
+<p>where \(v_s\) is the tangential velocity of the star along the trajectory it is moving on. Substituting for \( F_{\text {neces }} \) and \( F_{\text {grav }} \), we obtain:</p>
+<p>$$ m_{d m}=\frac{r_{b s} v_s^2}{G_{\text {newt }}}-m_b $$</p>
+<center>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="250" height="150" id="svg2" sodipodi:version="0.32" inkscape:version="0.92.3 (2405546, 2018-03-11)" sodipodi:docname="GalacticRotation2.svg" inkscape:export-filename="C:\Documents and Settings\phibbs\My Documents\My Pictures\Wikipedia\GalacticRotation2.png" inkscape:export-xdpi="242.89000" inkscape:export-ydpi="242.89000" version="1.1">
+  <defs id="defs4"/>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="5.312" inkscape:cx="125" inkscape:cy="75" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" inkscape:grid-points="true" inkscape:window-width="1920" inkscape:window-height="996" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1">
+    <inkscape:grid id="GridFromPre046Settings" type="xygrid" originx="0" originy="0" spacingx="5" spacingy="5" color="#0000ff" empcolor="#0000ff" opacity="0.2" empopacity="0.4" empspacing="5" visible="true" enabled="true" snapvisiblegridlinesonly="true"/>
+  </sodipodi:namedview>
+  <metadata id="metadata7">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" style="display:inline" transform="translate(0,-594.09448)">
+    <g id="g13561" transform="matrix(1.5703845,0,0,1.5703845,-54.273625,-370.90073)">
+      <path id="path1310" d="m 50.480392,620.864 0,76.41441 136.909148,0" style="fill:none;stroke:#000000;stroke-width:1.27357345;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:none" sodipodi:nodetypes="ccc"/>
+      <switch style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none"><text id="text2180-zh" y="706.8302" x="158.73413" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none" xml:space="preserve" systemLanguage="zh"><tspan y="706.8302" x="158.73413" id="tspan2182-zh" sodipodi:role="line" style="font-size:7.01351786px;line-height:1.25">  距離</tspan></text><text id="text2180" y="706.8302" x="158.73413" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none" xml:space="preserve"><tspan y="706.8302" x="158.73413" id="tspan2182" sodipodi:role="line" style="font-size:7.01351786px;line-height:1.25">Distance</tspan></text></switch>
+      <switch style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"><text transform="rotate(-90)" xml:space="preserve" style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none" x="-649.51941" y="44.112526" id="text2184-zh" systemLanguage="zh"><tspan id="tspan2188-zh" sodipodi:role="line" x="-649.51941" y="44.112526" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.01351786px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans'">  速度</tspan></text><text transform="rotate(-90)" xml:space="preserve" style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none" x="-649.51941" y="44.112526" id="text2184"><tspan id="tspan2188" sodipodi:role="line" x="-649.51941" y="44.112526" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.01351786px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans'">Velocity</tspan></text></switch>
+      <g inkscape:label="Layer 1" id="layer1-2" transform="matrix(0,-0.63678672,0.63678672,0,37.562719,632.41714)">
+        <path sodipodi:nodetypes="cccc" id="path2444" d="m 15.142857,18.285714 v 4 l 6,-2 z" style="display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.00000024;stroke-opacity:1;marker:none;enable-background:accumulate" inkscape:connector-curvature="0"/>
+      </g>
+      <g style="display:inline" inkscape:label="Layer 1" id="layer1-2-7" transform="matrix(0.63678672,0,0,0.63678672,175.83641,684.36074)">
+        <path sodipodi:nodetypes="cccc" id="path2444-2" d="m 15.142857,18.285714 v 4 l 6,-2 z" style="display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.00000024;stroke-opacity:1;marker:none;enable-background:accumulate" inkscape:connector-curvature="0"/>
+      </g>
+    </g>
+    <path style="fill:none;stroke:#204a87;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4.49552429999999958, 4.49552429999999958;stroke-dashoffset:0" d="m 33.987211,711.72094 c 0.326293,-7.34855 0.796709,-16.82956 1.109845,-25.96946 0.247708,-7.23019 0.737087,-14.50057 1.149015,-21.47036 0.578516,-9.78853 1.370585,-18.11856 2.19937,-25.30359 0.920531,-7.98042 1.639535,-13.9087 3.106753,-14.5576 15.630783,-5.61592 29.304641,12.02627 53.068728,30.50252 34.227848,23.6431 87.826828,34.31888 139.859898,39.60262" id="path2190" sodipodi:nodetypes="csssccc"/>
+    <switch style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#204a87;fill-opacity:1;stroke:none"><text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#204a87;fill-opacity:1;stroke:none" x="219.43105" y="688.19403" id="text5263"><tspan sodipodi:role="line" id="tspan5265" x="219.43105" y="688.19403" style="font-size:16px;line-height:1.25">A</tspan></text></switch>
+    <path style="font-size:8.00796509px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:none;stroke:#cc0000;stroke-width:1.10000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans" d="m 33.948212,711.74603 c 1.300764,-27.93926 1.814098,-55.72321 5.867448,-83.43821 0.690785,-7.05277 3.535066,-9.76056 13.082217,-9.76056 11.866081,0 21.535735,3.92136 35.667131,3.92136 15.634922,0.0996 61.597352,-6.47692 76.343772,-5.93455 16.19491,0 61.94528,1.95106 69.57204,2.56041" id="path4521" sodipodi:nodetypes="cccccc"/>
+    <switch style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#cc0000;fill-opacity:1;stroke:none"><text id="text5267" y="613.96252" x="221.93747" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#cc0000;fill-opacity:1;stroke:none" xml:space="preserve"><tspan y="613.96252" x="221.93747" id="tspan5269" sodipodi:role="line" style="font-size:16px;line-height:1.25;fill:#cc0000;stroke:none">B</tspan></text></switch>
+    <rect style="opacity:0;fill:none;stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" id="rect11511" width="261.84644" height="185.93127" x="6.6208959" y="561.59985"/>
+  </g>
+</svg>
+</center>
+<p>By <a href="https://commons.wikimedia.org/w/index.php?curid=365013"   target="_blank">
+    PhilHibbs</a> - Own work in Inkscape 0.42, Public Domain</p>
+<p>The above is the velocity curve with A being the predicted from our equations theoretically(the one without dark matter) and B being the actual one observed. This is called the velocity dispersion curve or galaxy rotation curve. The B curve and a curve generated by utilizing the dark matter, fit very closely. However &hellip;</p>
+<p>To explain the origin of this mass, we have hundreds of mathematical models derived from particle physics with not much experimental verification. We have been hunting for a theory of dark matter for more than 5 decades and we still haven&rsquo;t settled on one with a satisfying experimental validity. This made a few physicists think that we might be missing something. But before we discuss this missing piece of the puzzle, we have clearly used Newtonian gravity to explain this scenario. What about Einstein&rsquo;s General Relativity? Surely, it is a more accurate theory of gravity and it might have something special for us in the store, right? Well, not, let&rsquo;s look at why that is so.</p>
+<div id="einsteins-theory-of-relativity-a-calibration-step" class="anchor"></div>
+<h2 class="relative group">Einstein&rsquo;s Theory of Relativity: A Calibration Step 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#einsteins-theory-of-relativity-a-calibration-step" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>I feel the derivation of Einstein&rsquo;s Field Equations in General Relativity a bit ad-hoc. Let me explain how it is derived. Let us first, discuss the equation itself.</p>
+<p>$$ A_{\mu \nu}=\kappa T_{\mu \nu} $$</p>
+<p>We are not including the cosmological constant for now. With that stated, \(A_{\mu \nu} \) is the ******** tensor, \(\kappa \) s the constant or proportionality and \(T_{\mu \nu} \) is the stress-energy tensor of spacetime.</p>
+<p>If we follow the logical deductions of Einstein, we see that some tensor describing the spacetime must be proportional to the stress-energy tensor. This conclusion springs after a series of logical reasoning from the insights derived from Einstein&rsquo;s
+<em>gedankenexperiment</em> or <strong>thought experiment</strong> of the man trapped inside a lift which is placed in a gravitational field in one scenario and the lift being given the acceleration in another scenario. Here, Einstein establishes the proportionality we stated above.</p>
+<p>Now, one peculiar property of the stress-energy tensor is as follows:</p>
+<p>$$ \partial_\mu T^{\mu \nu}=0 $$</p>
+<p>The above equation dictates the energy-momentum conservation of the system. That demands us the following,</p>
+<p>$$ \partial_\mu A^{\mu \nu}=0 $$</p>
+<p>due to our equality. The tensors which purely contain the information of the curvatures of spacetime are as follows:</p>
+<p>$$ g_{\mu \nu} \text { and } R_{\mu \nu \sigma}^\rho $$</p>
+<p>where \(g_{\mu \nu}\) is the metric tensor and \(R_{\mu \nu \sigma}^\rho\) is the Riemann tensor. These two were the candidates for the definition of \(A^{\mu \nu}\). A naive or rushed move would be to substitute these candidates directly to \(A^{\mu \nu}\) and check the validity by testing \(\partial_\mu A^{\mu \nu}=0\).</p>
+<p>Unfortunately, both of them fail. With some series of permutations and combinations, Einstein defined a new tensor called Einstein tensor(of course the name came later and was named by somebody else). The Einstein tensor is defined as:
+$$
+G_{\mu \nu}=R_{\mu \nu}-\frac{1}{2} R g_{\mu \nu}
+$$</p>
+<p>where \(R_{\mu \nu}\) is the Ricci curvature tensor, which is in fact a contraction of the Riemann Tensor written as \(R_{\mu \nu}=R_{\mu \rho \nu}^\rho\) and \(R\) is the Ricci scalar which is yet another contraction of the Ricci curvature tensor.</p>
+<p>It is worth mentioning that only after a deliberate attempt to figure this \(G_{\mu \nu}\) which satisfies \(\partial_\mu G^{\mu \nu}=0\) did Einstein moved forward in writing down his gravitational field equation as follows:
+$$
+G_{\mu \nu}=\kappa T_{\mu \nu}
+$$
+Now before we figure out what is \(\kappa\), we must make a point of why we missed the cosmological constant which is written down in Einstein&rsquo;s equation. It is because Einstein himself found it ad-hoc to plug the Einstein tensor with a Ricci scalar and he wished what if there were another scalar quantity that can exist in this field equation. An attempt to this and experimental data supported the existence of the cosmological constant \(\Lambda\) which makes the field equation read as follows:
+$$
+G_{\mu \nu}+\Lambda g_{\mu \nu}=\kappa T_{\mu \nu}
+$$</p>
+<p>But, more on that in a future article. Coming back to our discussion, we see that we have to figure out the constant \(\kappa\) yet and let us do so.
+Here, Einstein took a limiting approximation of Gravity being weak, albeit the curvature is minimal. And working out a series of steps, he ended up with some equations where he plugged in <strong>Newton&rsquo;s Gravitational Force</strong> formula!
+Doing so yields us with the following:
+$$
+\kappa=\frac{8 \pi G_{\text {newt }}}{c^4}
+$$
+Plugging this into the Einstein&rsquo;s Field Equations, we obtain the following:
+$$
+G_{\mu \nu}=\frac{8 \pi G_{\text {newt }}}{c^4} T_{\mu \nu}
+$$</p>
+<p>This means that the heart of Einstein&rsquo;s General Relativity still recovers the Newtonain Gravity for weak cases. This makes for the fact that the above rudimentary analysis for Dark Matter is sufficient and an attempt to utilize the Einstein&rsquo;s Field Equations will still deliver us the same result, albeit we have to cross the amazon of the complicated algebra of Tensors.</p>
+<div id="mond-basics" class="anchor"></div>
+<h2 class="relative group">MOND: Basics 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#mond-basics" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>Now, some physicists thought that what if Newtonian Gravity is not the exact explanation of the gravity in the limit of the galaxy cluster i.e, for minute acceleration and velocities in the scale of a galaxy. The logical conclusions to make when one sees the deficiency in the galaxy rotation curves are as follows:</p>
+<ol>
+<li>There exists in galaxies large quantities of unseen matter which boosts the stars&rsquo; velocities beyond what would be expected on the basis of the visible mass alone, or</li>
+<li>Newton&rsquo;s Laws do not apply to galaxies.</li>
+</ol>
+<p>The first inference lead us to Dark Matter theories, the second to MOND. Thus came the framework <strong>MOND: Modified Newtonian Dynamics</strong>.</p>
+<p>It is proposed by Mordehai Milgrom in 1983. MOND basically rewrites the force law given by Newton for gravity as follows:</p>
+<p>$$ F_N=m \mu\left(\frac{a}{a_0}\right) $$</p>
+<p>with \(\mu\) being the <em>interpolating</em> function with the properties follows:</p>
+<p>$$
+\mu(x)= \begin{cases}1 &amp; \text { for } x \gg 1 \ x &amp; \text { for } x \ll 1\end{cases}
+$$</p>
+<p>Two such interpolating functions can be written as follows:
+$$
+\mu\left(\frac{a}{a_0}\right)=\frac{1}{1+\frac{a_0}{a}} \text { and } \mu\left(\frac{a}{a_0}\right)=\sqrt{\frac{1}{1+\left(\frac{a_0}{a}\right)^2}}
+$$
+MOND can be interpreted in two ways, one way is to modify the Newton&rsquo;s Force law which gives us the modified equation for centripetal force for a star in the MOND regime as:
+$$
+\frac{G M m}{r^2}=m \frac{\left(\frac{v^2}{r}\right)^2}{a_0} \quad \Longrightarrow \quad v^4=G M a_0
+$$
+or modifying the Gravitational Force of Newton by keeping the second law of Newton intact as follows:</p>
+<p>$$ \frac{G M m}{\mu\left(\frac{a}{a_0}\right) r^2} $$</p>
+<p>Now, this hypothesis that we need a modification of Newton&rsquo;s Law fits well with the observation of the galaxy rotation curves. That is a great leap of success for we don&rsquo;t need strange matter to explain such curves.</p>
+<div id="mond-compatibility" class="anchor"></div>
+<h2 class="relative group">MOND: Compatibility 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#mond-compatibility" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>Here is a list of other areas where the MOND framework is successful in explaining the observational data where it is hard to do so with dark-matter models. The list is not very extensive here, but for a extensive one, refer here.</p>
+<ol>
+<li>Since MOND modifies Newtonian dynamics in an acceleration-dependent way, it predicts a specific relationship between the acceleration of a star at any radius from the centre of a galaxy and the amount of unseen (dark matter) mass within that radius that would be inferred in a Newtonian analysis. This is known as the mass discrepancy-acceleration relation and has been measured in observations.</li>
+<li>Recent work has shown that many of the dwarf galaxies around the Milky Way and Andromeda are located preferentially in a single plane and have correlated motions. This suggests that they may have formed during a close encounter with another galaxy and hence be Tidal Dwarf Galaxies. If so, the presence of mass discrepancies in these systems constitutes further evidence for MOND.</li>
+<li>etcetera</li>
+</ol>
+<div id="quantum-gravity-and-recent-developments" class="anchor"></div>
+<h2 class="relative group">Quantum Gravity and Recent Developments 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#quantum-gravity-and-recent-developments" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>A theory of quantum gravity is expected to contain MOND framework by default in itself for some speciallimiting factors for MOND to be true. A major pressing issue of MOND is it&rsquo;s absence of a equally successful Relativistic Formulation. We hope we get a relativistic formulation which can explain more phenomena than the dark-matter models we have around us. Current models fall short of explaining CMBR anisotropy and other critical phenomena. Perhaps a hybrid dark-matter-MOND model might answer more answers!</p>
+
+        </br></br>
+        
+
+      </div>
+     
+     <script>
+        var oid = "views_posts\\MOND-A-Gentle-Introduction.md"
+        var oid_likes = "likes_posts\\MOND-A-Gentle-Introduction.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" integrity="sha512-DkmXO0rQo4LHxgEti/&#43;CJjFmQtqrxPiiBHe9CGdPPabi&#43;pk7wgrU9R58W7aOb5E6IHp8T&#43;N&#43;oOe4BolK/OCmTg=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+    
+  
+  <section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://twitter.com/intent/tweet/?url=//localhost:1313/posts/mond-a-gentle-introduction/&amp;text=MOND:%20A%20Gentle%20Introduction"
+      title="Tweet on Twitter"
+      aria-label="Tweet on Twitter"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://reddit.com/submit/?url=//localhost:1313/posts/mond-a-gentle-introduction/&amp;resubmit=true&amp;title=MOND:%20A%20Gentle%20Introduction"
+      title="Submit to Reddit"
+      aria-label="Submit to Reddit"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M201.5 305.5c-13.8 0-24.9-11.1-24.9-24.6 0-13.8 11.1-24.9 24.9-24.9 13.6 0 24.6 11.1 24.6 24.9 0 13.6-11.1 24.6-24.6 24.6zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-132.3-41.2c-9.4 0-17.7 3.9-23.8 10-22.4-15.5-52.6-25.5-86.1-26.6l17.4-78.3 55.4 12.5c0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.3 24.9-24.9s-11.1-24.9-24.9-24.9c-9.7 0-18 5.8-22.1 13.8l-61.2-13.6c-3-.8-6.1 1.4-6.9 4.4l-19.1 86.4c-33.2 1.4-63.1 11.3-85.5 26.8-6.1-6.4-14.7-10.2-24.1-10.2-34.9 0-46.3 46.9-14.4 62.8-1.1 5-1.7 10.2-1.7 15.5 0 52.6 59.2 95.2 132 95.2 73.1 0 132.3-42.6 132.3-95.2 0-5.3-.6-10.8-1.9-15.8 31.3-16 19.8-62.5-14.9-62.5zM302.8 331c-18.2 18.2-76.1 17.9-93.6 0-2.2-2.2-6.1-2.2-8.3 0-2.5 2.5-2.5 6.4 0 8.6 22.8 22.8 87.3 22.8 110.2 0 2.5-2.2 2.5-6.1 0-8.6-2.2-2.2-6.1-2.2-8.3 0zm7.7-75c-13.6 0-24.6 11.1-24.6 24.9 0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.1 24.9-24.6 0-13.8-11-24.9-24.9-24.9z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://www.facebook.com/sharer/sharer.php?u=//localhost:1313/posts/mond-a-gentle-introduction/&amp;quote=MOND:%20A%20Gentle%20Introduction"
+      title="Share on Facebook"
+      aria-label="Share on Facebook"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="mailto:?body=//localhost:1313/posts/mond-a-gentle-introduction/&amp;subject=MOND:%20A%20Gentle%20Introduction"
+      title="Send via email"
+      aria-label="Send via email"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=//localhost:1313/posts/mond-a-gentle-introduction/&amp;title=MOND:%20A%20Gentle%20Introduction"
+      title="Share on LinkedIn"
+      aria-label="Share on LinkedIn"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+  </section>
+
+
+
+    
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/posts/on-mctaggarts-unreality-of-time/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >On McTaggart's Unreality of Time</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2021-12-06 10:48:38 &#43;0100 CET">6 Dec, 2021</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/can-light-cast-its-own-shadow/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Can Light Cast Its Own Shadow?</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2021-12-07 15:52:56 &#43;0100 CET">7 Dec, 2021</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+    <nav class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
+      <ul class="flex flex-col list-none sm:flex-row">
+        
+        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2" href="/posts/"
+            title="">Blog</a>
+        </li>
+        
+        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2" href="/categories/"
+            title="">Categories</a>
+        </li>
+        
+        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2" href="/tags/"
+            title="">Tags</a>
+        </li>
+        
+        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2" href="/impressum/"
+            title="">Impressum</a>
+        </li>
+        
+        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2" href=""
+            title="">Privacy</a>
+        </li>
+        
+      </ul>
+    </nav>
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2024
+      Ashwin Balaji
+    </p>
+    
+
+    
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.35c1113bcc16c5a59bf031082f9e63822aa95280423881a7847a7ff33a16e6299ce6a840d9ef4e10d947e030a18f3f20359afb2ec0f35967484b9a9360ac3145.js" integrity="sha512-NcERO8wWxaWb8DEIL55jgiqpUoBCOIGnhHp/8zoW5imc5qhA2e9OENlH4DChjz8gNZr7LsDzWWdIS5qTYKwxRQ=="></script>
+  
+  
+</footer><div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="//localhost:1313/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>

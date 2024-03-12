@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+    
+      <url>
+            <loc>//localhost:1313/</loc>
+            <lastmod>2024-03-12T15:40:46+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/</loc>
+            <lastmod>2024-03-12T15:40:46+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/diy-hpc-grid-cluster-part-1/</loc>
+            <lastmod>2024-03-12T15:40:46+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/summary-and-thoughts-on-foundation/</loc>
+            <lastmod>2023-08-26T11:52:30+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/matlab-in-linux-server-an-attempt-part-1/</loc>
+            <lastmod>2023-08-19T17:14:39+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/role-of-faith-in-scientific-community-a-foundation-perspective/</loc>
+            <lastmod>2023-08-19T17:09:43+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/why-mac-studio-is-the-cheapest-hardware/</loc>
+            <lastmod>2023-07-11T11:08:41+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/will-ai-takeover-our-jobs/</loc>
+            <lastmod>2023-04-03T14:52:50+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/multiverse-hypothesis/</loc>
+            <lastmod>2023-04-03T14:13:52+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/impressum/</loc>
+            <lastmod>2023-02-24T20:16:10+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/about/</loc>
+            <lastmod>2023-02-24T18:55:10+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/continuity-of-the-memory-as-personal-identity/</loc>
+            <lastmod>2022-10-20T08:15:00+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/problems-with-testimony/</loc>
+            <lastmod>2022-10-11T14:39:22+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/srimad-bhagavatam-cosmology-sbc-under-a-possible-scientific-scrutiny/</loc>
+            <lastmod>2022-08-17T02:01:24+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/the-cardinality-of-a-set-and-the-peanos-axioms/</loc>
+            <lastmod>2022-07-08T16:00:21+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/requirements-of-a-formal-system-a-thought/</loc>
+            <lastmod>2022-07-08T08:44:34+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/unspoken-section-of-quantum-mechanics/</loc>
+            <lastmod>2022-07-04T12:35:20+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/numbers-mysterious-existence/</loc>
+            <lastmod>2022-07-01T08:07:25+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/hyper-v-is-underrated/</loc>
+            <lastmod>2022-06-30T10:01:24+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/pa%C3%B1cabheda-the-five-fold-difference-in-the-epistemology-of-%C4%81nanda-t%C4%ABrtha/</loc>
+            <lastmod>2022-05-23T14:41:23+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/ingeniously-decipher-the-concept-of-illusions-with-srila-madhvacarya/</loc>
+            <lastmod>2022-05-19T14:52:27+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/is-emergence-fundamental/</loc>
+            <lastmod>2022-04-23T12:13:37+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/revisiting-fibonacci-sequence/</loc>
+            <lastmod>2022-04-06T12:19:01+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/calculus-to-linear-algebra/</loc>
+            <lastmod>2022-03-29T11:43:36+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/limits-of-embodied-spirit/</loc>
+            <lastmod>2022-03-14T08:37:01+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/simulating-physics-in-a-computer-another-matrix/</loc>
+            <lastmod>2022-03-10T11:06:44+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/chilling-adventures-of-sabrina/</loc>
+            <lastmod>2022-03-02T11:21:45+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/waveguide-mode-visualizer/</loc>
+            <lastmod>2022-02-23T02:37:28+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/midnight-library-a-factual-fiction/</loc>
+            <lastmod>2022-02-11T09:55:52+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/an-analogy-to-dive-deep-into-the-nature-of-time/</loc>
+            <lastmod>2022-02-10T16:42:53+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/what-do-you-choose-to-be/</loc>
+            <lastmod>2022-01-06T14:32:04+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/what-is-momentum/</loc>
+            <lastmod>2021-12-10T16:07:32+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/can-light-cast-its-own-shadow/</loc>
+            <lastmod>2021-12-07T15:52:56+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/mond-a-gentle-introduction/</loc>
+            <lastmod>2021-12-06T14:00:02+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/on-mctaggarts-unreality-of-time/</loc>
+            <lastmod>2021-12-06T10:48:38+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/god-does-not-play-dice/</loc>
+            <lastmod>2021-12-03T15:48:09+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/flatland-romance-of-many-dimensions/</loc>
+            <lastmod>2021-11-29T08:41:37+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/why-are-irrational-numbers-termed-as-irrational/</loc>
+            <lastmod>2021-11-27T02:55:26+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/dark-side-of-scientific-notation/</loc>
+            <lastmod>2021-11-26T09:43:43+01:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/similarities-between-the-worldviews-of-matrix-inception-and-caitanya-philosophy/</loc>
+            <lastmod>2021-04-16T14:04:44+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/matrix-reloaded-merovingians-views-of-causality-and-purpose-of-purpose/</loc>
+            <lastmod>2021-04-16T08:48:35+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>//localhost:1313/posts/my-opinion-about-economics/</loc>
+            <lastmod>2020-08-04T13:49:20+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+</urlset>
