@@ -31,6 +31,8 @@ There is a lot of used hardware of Mini-PCs or Thin Clients as they are called i
 
 The performance of i5-6500T is much faster than N5095 where the latter is a recent release than the former. So, all the Fujitsu Thin Clients turned out to be worker nodes. Terminology clarification: Controller node is the PC that builds the code into binaries, manages queue and users who submit the jobs to compute. Worker nodes are the ones doing heavy-lifting. I also own another Thin Client which I setup as a NAS device serving specific functions. This can serve as a centralized storage pool for data crunching of large files via a NFS share. You will see the messed up wiring and setup of these in the following image.
 
+I can use the Wake-on-LAN feature to remotely turn them off and on as necessary to conserve power. The total idle power consumption and peak power consumption is not yet determined but will report it on next article.
+
 ![](img/20240312_141055.JPG)
 
 Why I didn‘t go for ARM? The options and upgradability are limited, for I can go with multiple Raspberry Pis which is very underperforming and cannot be upgraded later. There is an announcement for Qualcomm‘s own Snapdragon X Elite ARM processor but I would have to wait till its release in June 2024. Even if I wait, I don‘t have any information about the types of hardware that will accompany it. So, due to uncertainty, I decided to drop ARM, even though most new supercomputers use ARM for their power efficiency. I know one can setup a single-node cluster to work with, and I briefly decided to exchange my M1 MacBook Pro for a Mac Mini to do the same since they run on ARM, the support for `slurm` is very limited. So, I waited it out to test my algorithms on ARM when a Thin Client for ARM is released. I could effectively try Microsoft‘s Volterra but support for Linux on that machine is experimental at best.
@@ -44,6 +46,8 @@ The software choice clearly depends on the ability to run `slurm` and utilize ma
 OpenSUSE comes in two flavors: Leap and Tumbleweed. The latter is rolling distribution, meaning new software updates every few days that may or may not be stable. The former gets software updates once in a while but they prove to be stable and effective. I don‘t have to convince anyone of the merits of getting stable packages, especially for one who is venturing into this area. We don‘t want to be troubleshooting an incompatible update when we are trying to learn what makes and breaks the algorithms as a novice.
 
 Later I followed documentation of openSUSE and setup `slurmd` and `slurm` packages on the system with `munge` as an authenticator. I also added the controller node, named after Jost Bürgi, for his contributions to the advancement in computing; to a private zero tier network so I can access the controller node from anywhere around the world securely to add a job to compute on my cluster or manage it. The controller node also has a MariaDB server running on it to record all the past job activities and users‘ interactions (will come in handy if I let my friends also play with these toys soon).
+
+The vPro feature that is quite similar to IPMI but patented by Intel, offers ease of management of the Thin Clients remotely, however this works with Windows as an OS. There may be ways to do it in Linux but since this is very little number of nodes, doing it manually wouldn't be a chore. I could use ansible for management and prometheus-grafana combo for monitoring, but more on that once I decide upon what is needed and what I wish to implement.
 
 ## Next Steps
 
