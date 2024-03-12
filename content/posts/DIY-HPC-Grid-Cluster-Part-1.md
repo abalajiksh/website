@@ -40,7 +40,6 @@ Why I didn‘t go for ARM? The options and upgradability are limited, for I can 
 ### Do I need both x86-64 and ARM Clusters?
 Unfortunately I guess yes, since not all libraries are optimized for ARM but for the other, certain manual tweaking might be necessary. x86-64 computing existed and exists for a long time and many numerical libraries are optimized to take advantage of the architecture. So is PowerPC from IBM, however, ARM needs catching up to these optimizations. So, I wish to setup a capable single-node cluster with ARM later on. I can do so with a Raspberry Pi 4B 4GB RAM I own currently, but I doubt it would run into bottlenecks to run simple programs during testing.
 
-Fortunately, all the Fujitsu Thin Clients have vPro version of CPUs installed. This means remote management of systems is a breeze. However, the software choice I made has disabled such features.
 
 ## Software
 
@@ -50,7 +49,7 @@ OpenSUSE comes in two flavors: Leap and Tumbleweed. The latter is rolling distri
 
 Later I followed documentation of openSUSE and setup `slurmd` and `slurm` packages on the system with `munge` as an authenticator. I also added the controller node, named after Jost Bürgi, for his contributions to the advancement in computing; to a private zero tier network so I can access the controller node from anywhere around the world securely to add a job to compute on my cluster or manage it. The controller node also has a MariaDB server running on it to record all the past job activities and users‘ interactions (will come in handy if I let my friends also play with these toys soon).
 
-The vPro feature that is quite similar to IPMI but patented by Intel, offers ease of management of the Thin Clients remotely, however this works with Windows as an OS. There may be ways to do it in Linux but since this is very little number of nodes, doing it manually wouldn't be a chore. I could use ansible for management and prometheus-grafana combo for monitoring, but more on that once I decide upon what is needed and what I wish to implement.
+Fortunately, all the Fujitsu Thin Clients have vPro version of CPUs installed. This means remote management of systems is a breeze. However, the software choice I made has disabled such features. The vPro feature that is quite similar to IPMI but patented by Intel, offers ease of management of the Thin Clients remotely, however this works with Windows as an OS. There may be ways to do it in Linux but since this is very little number of nodes, doing it manually wouldn't be a chore or worth the time setting it up. I could use ansible for management and prometheus-grafana combo for monitoring, but more on that once I decide upon what is needed and what I wish to implement.
 
 ## Next Steps
 
