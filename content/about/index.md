@@ -16,12 +16,12 @@ The above phrase is a constant reminder (for me) of all the things I am consciou
 I believe that by unveiling our ignorance on igonorance, we make the first step towards realizing knowledge. And to me, this is the cardinal aspect of my existence. To make efforts in gathering knowledge, I turn towards Physics, Mathematics and Philosophy.
 ## Short Version
 I'm enrolled to Masters in Physics program at Ruprecht Karl Universität Heidelberg. My primary interests that I wish to explore are 
-- Concept of Time, 
+- Topologies of Time, 
 - Quantum Gravity, 
 - Philosophy of Physics,
-- Lattice Field Theory.
+- Structure of Gauge Theories.
 
-I am categorized as INTP in MBTI Personality Index. Infer what you will of this information.
+I am categorized as INTP in MBTI Personality Index. I request you to draw your own conclusions based on this information.
 
 ## Long Version
 
