@@ -37,6 +37,9 @@ I can use the Wake-on-LAN feature to remotely turn them off and on as necessary 
 
 Why I didn‘t go for ARM? The options and upgradability are limited, for I can go with multiple Raspberry Pis which is very underperforming and cannot be upgraded later. There is an announcement for Qualcomm‘s own Snapdragon X Elite ARM processor but I would have to wait till its release in June 2024. Even if I wait, I don‘t have any information about the types of hardware that will accompany it. So, due to uncertainty, I decided to drop ARM, even though most new supercomputers use ARM for their power efficiency. I know one can setup a single-node cluster to work with, and I briefly decided to exchange my M1 MacBook Pro for a Mac Mini to do the same since they run on ARM, the support for `slurm` is very limited. So, I waited it out to test my algorithms on ARM when a Thin Client for ARM is released. I could effectively try Microsoft‘s Volterra but support for Linux on that machine is experimental at best.
 
+### Do I need both x86-64 and ARM Clusters?
+Unfortunately I guess yes, since not all libraries are optimized for ARM but for the other, certain manual tweaking might be necessary. x86-64 computing existed and exists for a long time and many numerical libraries are optimized to take advantage of the architecture. So is PowerPC from IBM, however, ARM needs catching up to these optimizations. So, I wish to setup a capable single-node cluster with ARM later on. I can do so with a Raspberry Pi 4B 4GB RAM I own currently, but I doubt it would run into bottlenecks to run simple programs during testing.
+
 Fortunately, all the Fujitsu Thin Clients have vPro version of CPUs installed. This means remote management of systems is a breeze. However, the software choice I made has disabled such features.
 
 ## Software
