@@ -21,7 +21,7 @@ I'm enrolled to Masters in Physics program at Ruprecht Karl Universität Heidelb
 - Philosophy of Physics,
 - Structure of Gauge Theories.
 
-I am categorized as INTP in MBTI Personality Index. Draw your own conclusions.
+Scientific Visualizations are an interest of mine, and wish to do more of it in the future.
 
 ## Long Version
 
