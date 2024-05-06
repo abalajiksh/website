@@ -10,10 +10,10 @@ draft: false
 >}}
 I just don't know anymore.
 {{< /typeit >}}
-The above phrase is a constant reminder (for me) of all the things I am conscious about being ignorant. As **James Clerk Maxwell** says,
+The above phrase is a constant reminder (for me) of all the things I am conscious, about being ignorant. As **James Clerk Maxwell** says,
 > Thoroughly conscious ignorance is the prelude to every real advance in science.
 
-I believe that by unveiling our ignorance on igonorance, we make the first step towards realizing knowledge. And to me, this is the cardinal aspect of my existence. To make efforts in gathering knowledge, I turn towards Physics, Mathematics and Philosophy.
+I believe that by unveiling our ignorance on ignorance, we make the first step towards realizing knowledge. To make efforts in gathering knowledge, I turn towards Physics, Mathematics and Philosophy.
 ## Short Version
 I'm enrolled to Masters in Physics program at Ruprecht Karl Universität Heidelberg. My primary interests that I wish to explore are 
 - Topologies of Time, 
@@ -21,7 +21,7 @@ I'm enrolled to Masters in Physics program at Ruprecht Karl Universität Heidelb
 - Philosophy of Physics,
 - Structure of Gauge Theories.
 
-I am categorized as INTP in MBTI Personality Index. I request you to draw your own conclusions based on this information.
+I am categorized as INTP in MBTI Personality Index. Draw your own conclusions.
 
 ## Long Version
 
