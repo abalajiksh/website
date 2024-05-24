@@ -23,6 +23,11 @@ I'm enrolled to Masters in Physics program at Ruprecht Karl Universität Heidelb
 
 Scientific Visualizations are an interest of mine, and wish to do more of it in the future. I occasionally go on cycling rides. If you wish to know what I am upto these days, like reading a book or visiting places by bicycle, check my Goodreads and/or Strava profile that is linked in the homepage.
 
+<a style="display:inline-block;background-color:#FC5200;color:#fff;padding:5px 10px 5px 30px;font-size:11px;font-family:Helvetica, Arial, sans-serif;white-space:nowrap;text-decoration:none;background-repeat:no-repeat;background-position:10px center;border-radius:3px;background-image:url('https://badges.strava.com/logo-strava-echelon.png')" href='https://strava.com/athletes/127798236' target="_clean">
+  Follow me on
+  <img src='https://badges.strava.com/logo-strava.png' alt='Strava' style='margin-left:2px;vertical-align:text-bottom' height=13 width=51 />
+</a>
+
 ## Long Version
 
 will post soon
