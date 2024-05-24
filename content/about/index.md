@@ -21,7 +21,7 @@ I'm enrolled to Masters in Physics program at Ruprecht Karl Universität Heidelb
 - Philosophy of Physics,
 - Structure of Gauge Theories.
 
-Scientific Visualizations are an interest of mine, and wish to do more of it in the future. I occasionally go on cycling rides.
+Scientific Visualizations are an interest of mine, and wish to do more of it in the future. I occasionally go on cycling rides. If you wish to know what I am upto these days, like reading a book or visiting places by bicycle, check my Goodreads and/or Strava profile that is linked in the homepage.
 
 ## Long Version
 
