@@ -11,8 +11,8 @@
   <title>DIY HPC Grid Cluster: Part 1 &middot; Ashwin Balaji</title>
   <meta name="title" content="DIY HPC Grid Cluster: Part 1 &middot; Ashwin Balaji" />
   
-  <meta name="description" content="I just don&#39;t know anymore." />
-  
+  <meta name="description" content="This article details the process of building a budget-friendly Grid Computing Cluster for theoretical physics simulations. Learn how to repurpose used hardware, install OpenSUSE Leap, configure Slurm workload manager, and leverage OpenMP and MPI libraries for parallel computing. Perfect for students and researchers interested in DIY HPC solutions." />
+  <meta name="keywords" content="DIY Grid Computing Cluster, Theoretical Physics Simulations, Parallel Computing with OpenMP and MPI, Supercomputer on a Budget, Repurposing Used Hardware for HPC, Linux Cluster with OpenSUSE Leap, Slurm Workload Manager, Theoretical Physics Research, " />
   
   
   <link rel="canonical" href="//localhost:1313/posts/diy-hpc-grid-cluster-part-1/" />
@@ -44,8 +44,8 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.cfe7a5826ca891c0d4396747d37fe961dd1e874835dfe591dd8962a103a8c837840acbe40df492814ea34a1e888ec717b3a505bf2765e3f1eafaab2daf157c1c.js"
-    integrity="sha512-z&#43;elgmyokcDUOWdH03/pYd0eh0g13&#43;WR3YlioQOoyDeECsvkDfSSgU6jSh6IjscXs6UFvydl4/Hq&#43;qstrxV8HA==" data-copy="" data-copied=""></script>
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.9725b524abcd7bafb6587c4558df18b3a4474ce8aab2ff1fd311a08172fc8f7e748835de4124690f49fed626d8b9e6936cc04f69efcf26ef69b92985dd911c78.js"
+    integrity="sha512-lyW1JKvNe6&#43;2WHxFWN8Ys6RHTOiqsv8f0xGggXL8j350iDXeQSRpD0n&#43;1ibYueaTbMBPae/PJu9puSmF3ZEceA==" data-copy="" data-copied=""></script>
   
   <script src="/js/zoom.min.js"></script>
   
@@ -61,16 +61,26 @@
   
   
   
-  <meta property="og:title" content="DIY HPC Grid Cluster: Part 1" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="//localhost:1313/posts/diy-hpc-grid-cluster-part-1/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-03-12T15:40:46+01:00" />
-<meta property="article:modified_time" content="2024-03-12T15:40:46+01:00" />
+  <meta property="og:url" content="//localhost:1313/posts/diy-hpc-grid-cluster-part-1/">
+  <meta property="og:site_name" content="Ashwin Balaji">
+  <meta property="og:title" content="DIY HPC Grid Cluster: Part 1">
+  <meta property="og:description" content="This article details the process of building a budget-friendly Grid Computing Cluster for theoretical physics simulations. Learn how to repurpose used hardware, install OpenSUSE Leap, configure Slurm workload manager, and leverage OpenMP and MPI libraries for parallel computing. Perfect for students and researchers interested in DIY HPC solutions.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-03-12T15:40:46+01:00">
+    <meta property="article:modified_time" content="2024-03-12T15:40:46+01:00">
+    <meta property="article:tag" content="DIY Grid Computing Cluster">
+    <meta property="article:tag" content="Theoretical Physics Simulations">
+    <meta property="article:tag" content="Parallel Computing With OpenMP and MPI">
+    <meta property="article:tag" content="Supercomputer on a Budget">
+    <meta property="article:tag" content="Repurposing Used Hardware for HPC">
+    <meta property="article:tag" content="Linux Cluster With OpenSUSE Leap">
 
-
-  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="DIY HPC Grid Cluster: Part 1"/>
-<meta name="twitter:description" content=""/>
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="DIY HPC Grid Cluster: Part 1">
+  <meta name="twitter:description" content="This article details the process of building a budget-friendly Grid Computing Cluster for theoretical physics simulations. Learn how to repurpose used hardware, install OpenSUSE Leap, configure Slurm workload manager, and leverage OpenMP and MPI libraries for parallel computing. Perfect for students and researchers interested in DIY HPC solutions.">
 
   
   <script type="application/ld+json">
@@ -80,7 +90,7 @@
     "articleSection": "",
     "name": "DIY HPC Grid Cluster: Part 1",
     "headline": "DIY HPC Grid Cluster: Part 1",
-    
+    "description": "This article details the process of building a budget-friendly Grid Computing Cluster for theoretical physics simulations. Learn how to repurpose used hardware, install OpenSUSE Leap, configure Slurm workload manager, and leverage OpenMP and MPI libraries for parallel computing. Perfect for students and researchers interested in DIY HPC solutions.",
     
     "inLanguage": "en",
     "url" : "\/\/localhost:1313\/posts\/diy-hpc-grid-cluster-part-1\/",
@@ -94,10 +104,10 @@
     
     "dateModified": "2024-03-12T15:40:46\u002b01:00",
     
-    
+    "keywords": ["DIY Grid Computing Cluster","Theoretical Physics Simulations","Parallel Computing with OpenMP and MPI","Supercomputer on a Budget","Repurposing Used Hardware for HPC","Linux Cluster with OpenSUSE Leap","Slurm Workload Manager","Theoretical Physics Research"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "0"
+    "wordCount": "1481"
   }]
   </script>
 
@@ -109,6 +119,18 @@
   
   
   <link href="https://github.com/abalajiksh" rel="me" />
+  
+  
+  <link href="https://www.goodreads.com/ashwinbalaji" rel="me" />
+  
+  
+  <link href="https://www.instagram.com/ashwinbalaji00/" rel="me" />
+  
+  
+  <link href="https://www.komoot.com/user/3900478743159" rel="me" />
+  
+  
+  <link href="https://www.strava.com/athletes/127798236" rel="me" />
   
   
   <link href="https://steamcommunity.com/id/ashwin-balaji/" rel="me" />
@@ -244,7 +266,7 @@
           </p>
         </a>
         
-        <a href=""  class="flex items-center">
+        <a href="/categories/philosophy/"  class="flex items-center">
           
           <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
             Philosophy
@@ -265,7 +287,7 @@
           </p>
         </a>
         
-        <a href="/categories/video-essay/"  class="flex items-center">
+        <a href=""  class="flex items-center">
           
           <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
             Video Essay
@@ -294,7 +316,7 @@
   <div>
   <div class="cursor-pointer flex items-center nested-menu">
     
-    <a  class="text-base font-medium text-gray-500 hover:text-gray-900" title="">
+    <a  href="/categories/reviews/"   class="text-base font-medium text-gray-500 hover:text-gray-900" title="">
       Reviews
     </a>
     <span>
@@ -551,7 +573,7 @@
 </li>
 
 <li class="mt-1">
-    <a href=""  class="flex items-center">
+    <a href="/categories/philosophy/"  class="flex items-center">
         
         <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="">
             Philosophy
@@ -578,7 +600,7 @@
 </li>
 
 <li class="mt-1">
-    <a href="/categories/video-essay/"  class="flex items-center">
+    <a href=""  class="flex items-center">
         
         <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="">
             Video Essay
@@ -732,10 +754,12 @@
 
 
 
+
+
 <div class="flex flex-row flex-wrap items-center">
   
   
-  &lt;time datetime=&#34;2024-03-12 15:40:46 &amp;#43;0100 CET&#34;&gt;12 Mar, 2024&lt;/time&gt;
+  &lt;time datetime=&#34;2024-03-12 15:40:46 &amp;#43;0100 CET&#34;&gt;12 Mar, 2024&lt;/time&gt;&lt;span class=&#34;px-2 text-primary-500&#34;&gt;&amp;middot;&lt;/span&gt;&lt;span title=&#34;Reading time&#34;&gt;7 mins&lt;/span&gt;
   
 
   
@@ -753,9 +777,123 @@
   
   
   
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/physics/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Physics
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/computers/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Computers
+  </span>
+</span>
+
+  </span>
   
   
   
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/diy-grid-computing-cluster/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    DIY Grid Computing Cluster
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/theoretical-physics-simulations/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Theoretical Physics Simulations
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/parallel-computing-with-openmp-and-mpi/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Parallel Computing With OpenMP and MPI
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/supercomputer-on-a-budget/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Supercomputer on a Budget
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/repurposing-used-hardware-for-hpc/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Repurposing Used Hardware for HPC
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/linux-cluster-with-opensuse-leap/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Linux Cluster With OpenSUSE Leap
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/slurm-workload-manager/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Slurm Workload Manager
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/theoretical-physics-research/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Theoretical Physics Research
+  </span>
+</span>
+
+  </span>
   
   
   
@@ -782,23 +920,229 @@
   
   </header>
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
-    
+     <div
+      class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky  lg:top-10 ">
+
+         <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#why">Why</a></li>
+    <li><a href="#hardware">Hardware</a>
+      <ul>
+        <li><a href="#do-i-need-both-x86-64-and-arm-clusters">Do I need both x86-64 and ARM Clusters?</a></li>
+      </ul>
+    </li>
+    <li><a href="#software">Software</a></li>
+    <li><a href="#next-steps">Next Steps</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#why">Why</a></li>
+    <li><a href="#hardware">Hardware</a>
+      <ul>
+        <li><a href="#do-i-need-both-x86-64-and-arm-clusters">Do I need both x86-64 and ARM Clusters?</a></li>
+      </ul>
+    </li>
+    <li><a href="#software">Software</a></li>
+    <li><a href="#next-steps">Next Steps</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+ 
+<script>
+  (function () {
+    var $toc = $('#TableOfContents');
+    if ($toc.length > 0) {
+      var $window = $(window);
+
+      function onScroll() {
+        var currentScroll = $window.scrollTop();
+        var h = $('.anchor');
+        var id = "";
+        h.each(function (i, e) {
+          e = $(e);
+          if (e.offset().top - $(window).height()/3 <= currentScroll) {
+            id = e.attr('id');
+          }
+        });
+        var active = $toc.find('a.active');      
+        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+        active.each(function (i, e) {
+          
+            $(e).removeClass('active');
+          
+        });
+        $toc.find('a[href="#' + id + '"]').addClass('active')
+        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+          $(e).children('a').parents('ul').show();          
+        });
+      }
+
+      $window.on('scroll', onScroll);
+      $(document).ready(function () {
+        
+        onScroll();
+      });
+    }
+  })();
+</script>
+   </div>
+      </div>
+      
       <div class="min-w-0 min-h-0 max-w-prose">
         
 
-        
+        <p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        srcset="
+        /img/supercomputing_grid_cluster_3064264560_hu7103509314616678515.png 330w,
+        /img/supercomputing_grid_cluster_3064264560_hu4504866726467602204.png 660w,
+        /img/supercomputing_grid_cluster_3064264560_hu11004372969064740155.png 1024w,
+        /img/supercomputing_grid_cluster_3064264560_hu6265408067203109856.png 2x"
+        src="/img/supercomputing_grid_cluster_3064264560_hu4504866726467602204.png"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
+<div id="why" class="anchor"></div>
+<h2 class="relative group">Why 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#why" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>I am interested in Theoretical Physics. However, I can bring many fancy ideas using the Mathematics and Theoretical Laws into new theories, I would waste my time if there is no way to test them. Einstein and his colleagues could come up with calculations that helped test General Relativity. It may not always be the case. With theories becoming more abstract and complicated, and experimental setup getting exorbitant as time passes; I believe, numerical computations and simulations stand to be the first line of defense for further pursued interest in experimental verification of new ideas.</p>
+<p>I have spent a great deal of time learning algorithms and solving simple problems using numerical methods. To compute complex mathematical problems requires a great deal of skill and optimization. However, a single piece of computer can only take you so far. One needs to use how to use multiple computers in sync to solve enormous problems that would otherwise be impossible. That is when I realized that I OpenMP and MPI libraries to parallelize the computations.</p>
+<p>I can learn theoretical algorithms, but how will I test I am doing the right thing? How can I improve without actually testing my theoretical understanding? I need to execute these algorithms on a Grid Computing Cluster. First bottleneck, I don‘t have access to one. This is where I decided I would build one.</p>
+<p>How can I build one? I have experience as Linux System Administrator for 4 years and have basics covered. I need money and some help to build a setup that would be my testing ground. In the next section, let me outline my process to decide upon and acquire the Hardware for such a use case.</p>
+<div id="hardware" class="anchor"></div>
+<h2 class="relative group">Hardware 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#hardware" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>All the supercomputers that are built around the globe are based on 2 types of CPU architecture. x86-64 and ARM. So, my testing grounds should have an implementation of both or either of these. ARM is more power efficient, id est, performance to power ratio is high. However, building one for myself that is reasonably performant and cost effective is a factor that outweighs power considerations. My decisions were skewed in favor of x86-64 because of multiple reasons in their decreasing order of preference.</p>
+<ol>
+<li>Hardware availability and upgradability</li>
+<li>E-waste reuse</li>
+<li>Pricing and upgradability</li>
+<li>Performance</li>
+<li>Hardware I own prior to deciding upon building one.</li>
+</ol>
+<p>There is a lot of used hardware of Mini-PCs or Thin Clients as they are called in the market. Companies buy them in bulk for their employees for usage and upgrade them in a 4-6 year cycle. This means a lot of used but refurbished hardware is available on the market. Upon searching for a perfect CPU and pricing, I decided upon Intel Core i5-6500T based Thin Clients as they price around 100€-120€ based on the configuration. I went with 3 identical units of Fujitsu Esprimo Q556 with 8GB RAM and 250GB SSD in eBay (each unit priced at 88€ only). We have the option to upgrade the RAM and SSD if necessary. I already own an 8-port Gigabit Ethernet switch (by TP-Link) that is unmanaged (no VLANs, or security essentials) and a Beelink MINI S 8G/256G/N5095 PC (which I assigned it as controller node).</p>
+<p>The performance of i5-6500T is much faster than N5095 where the latter is a recent release than the former. So, all the Fujitsu Thin Clients turned out to be worker nodes. Terminology clarification: Controller node is the PC that builds the code into binaries, manages queue and users who submit the jobs to compute. Worker nodes are the ones doing heavy-lifting. I also own another Thin Client which I setup as a NAS device serving specific functions. This can serve as a centralized storage pool for data crunching of large files via a NFS share. You will see the messed up wiring and setup of these in the following image.</p>
+<p>I can use the Wake-on-LAN feature to remotely turn them off and on as necessary to conserve power. The total idle power consumption and peak power consumption is not yet determined but will report it on next article.</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        srcset="
+        /img/20240312_141055_hu7776971801016639123.JPG 330w,
+        /img/20240312_141055_hu12891227569864191535.JPG 660w,
+        /img/20240312_141055_hu1010982327885061264.JPG 1024w,
+        /img/20240312_141055_hu11403862392282787886.JPG 2x"
+        src="/img/20240312_141055_hu12891227569864191535.JPG"
+        alt=""
+      />
+      
+      
+    </figure>
+  
+
+</p>
+<p>Why I didn‘t go for ARM? The options and upgradability are limited, for I can go with multiple Raspberry Pis which is very underperforming and cannot be upgraded later. There is an announcement for Qualcomm‘s own Snapdragon X Elite ARM processor but I would have to wait till its release in June 2024. Even if I wait, I don‘t have any information about the types of hardware that will accompany it. So, due to uncertainty, I decided to drop ARM, even though most new supercomputers use ARM for their power efficiency. I know one can setup a single-node cluster to work with, and I briefly decided to exchange my M1 MacBook Pro for a Mac Mini to do the same since they run on ARM, the support for <code>slurm</code> is very limited. So, I waited it out to test my algorithms on ARM when a Thin Client for ARM is released. I could effectively try Microsoft‘s Volterra but support for Linux on that machine is experimental at best.</p>
+<div id="do-i-need-both-x86-64-and-arm-clusters" class="anchor"></div>
+<h3 class="relative group">Do I need both x86-64 and ARM Clusters? 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#do-i-need-both-x86-64-and-arm-clusters" aria-label="Anchor">#</a></span>        
+    
+</h3>
+<p>Unfortunately I guess yes, since not all libraries are optimized for ARM but for the other, certain manual tweaking might be necessary. x86-64 computing existed and exists for a long time and many numerical libraries are optimized to take advantage of the architecture. So is PowerPC from IBM, however, ARM needs catching up to these optimizations. So, I wish to setup a capable single-node cluster with ARM later on. I can do so with a Raspberry Pi 4B 4GB RAM I own currently, but I doubt it would run into bottlenecks to run simple programs during testing.</p>
+<div id="software" class="anchor"></div>
+<h2 class="relative group">Software 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#software" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>The software choice clearly depends on the ability to run <code>slurm</code> and utilize maximum compute potential of the worker nodes. The latter forced to decide against Windows and in favor of Linux and BSD. Since I am comfortable with Linux, I am faced with few popular choices: Debian, RHEL or SLES. RHEL is out of my equation since I am not comfortable with the choices IBM has made since it acquired Red Hat. Debian is stable but I just don‘t want to use. That left me with SLES, but I went with OpenSUSE Leap 15.4 since it is open-source version of SLES and is a stable operating system used in many clusters. OpenSUSE has 1:1 binary compatibility with SLES and support for troubleshooting is abundant in the forums. So, I flashed the OS into the USB drive and installed them to all the Thin Clients individually.</p>
+<p>OpenSUSE comes in two flavors: Leap and Tumbleweed. The latter is rolling distribution, meaning new software updates every few days that may or may not be stable. The former gets software updates once in a while but they prove to be stable and effective. I don‘t have to convince anyone of the merits of getting stable packages, especially for one who is venturing into this area. We don‘t want to be troubleshooting an incompatible update when we are trying to learn what makes and breaks the algorithms as a novice.</p>
+<p>Later I followed documentation of openSUSE and setup <code>slurmd</code> and <code>slurm</code> packages on the system with <code>munge</code> as an authenticator. I also added the controller node, named after Jost Bürgi, for his contributions to the advancement in computing; to a private zero tier network so I can access the controller node from anywhere around the world securely to add a job to compute on my cluster or manage it. The controller node also has a MariaDB server running on it to record all the past job activities and users‘ interactions (will come in handy if I let my friends also play with these toys soon).</p>
+<p>Fortunately, all the Fujitsu Thin Clients have vPro version of CPUs installed. This means remote management of systems is a breeze. However, the software choice I made has disabled such features. The vPro feature that is quite similar to IPMI but patented by Intel, offers ease of management of the Thin Clients remotely, however this works with Windows as an OS. There may be ways to do it in Linux but since this is very little number of nodes, doing it manually wouldn&rsquo;t be a chore or worth the time setting it up. I could use ansible for management and prometheus-grafana combo for monitoring, but more on that once I decide upon what is needed and what I wish to implement.</p>
+<div id="next-steps" class="anchor"></div>
+<h2 class="relative group">Next Steps 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#next-steps" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>Now I ought to learn OpenMP and MPI libraries and some parallel and distributed computing algorithms before I can think about implementing some simple physics problems to test them. Before that, I intend to benchmark the cluster performance and identify bottlenecks beforehand to know its limitations. The next article I write on this subject will contain this information.</p>
+
         </br></br>
         
 
       </div>
      
      <script>
-        var oid = "views_posts\\DIY-HPC-Grid-Cluster-Part-1.md"
-        var oid_likes = "likes_posts\\DIY-HPC-Grid-Cluster-Part-1.md"
+        var oid = "views_posts\/DIY-HPC-Grid-Cluster-Part-1.md"
+        var oid_likes = "likes_posts\/DIY-HPC-Grid-Cluster-Part-1.md"
       </script>
       
       
-      <script type="text/javascript" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" integrity="sha512-DkmXO0rQo4LHxgEti/&#43;CJjFmQtqrxPiiBHe9CGdPPabi&#43;pk7wgrU9R58W7aOb5E6IHp8T&#43;N&#43;oOe4BolK/OCmTg=="></script>
+      <script type="text/javascript" src="/js/page.min.4c1d8e0f53a5b5b7bccae87750581a0a393723aae9a9ae5622497d488b9689a4fd64a34846876e449a065aed64df10f9219b8df359a87371b998dd8bf58a1da5.js" integrity="sha512-TB2OD1Oltbe8yuh3UFgaCjk3I6rpqa5WIkl9SIuWiaT9ZKNIRoduRJoGWu1k3xD5IZuN81moc3G5mN2L9YodpQ=="></script>
   
     </section>
   <footer class="pt-8 max-w-prose print:hidden">
@@ -919,7 +1263,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/posts/summary-and-thoughts-on-foundation/">
+            <a class="flex group mr-3" href="/posts/why-mac-studio-is-the-cheapest-hardware/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -931,11 +1275,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Summary and Thoughts on Foundation</span
+                  >Why Mac Studio Is the Cheapest Hardware</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2023-08-26 11:52:30 &#43;0200 CEST">26 Aug, 2023</time>
+                    <time datetime="2023-07-11 11:08:41 &#43;0200 CEST">11 Jul, 2023</time>
                   
                 </span>
               </span>
@@ -954,7 +1298,13 @@
   </footer>
 </article>
 
-      
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
     </main><footer id="site-footer" class="py-10 print:hidden">
   
   
@@ -1017,7 +1367,7 @@
   </script>
   
   
-  <script type="text/javascript" src="/js/process.min.35c1113bcc16c5a59bf031082f9e63822aa95280423881a7847a7ff33a16e6299ce6a840d9ef4e10d947e030a18f3f20359afb2ec0f35967484b9a9360ac3145.js" integrity="sha512-NcERO8wWxaWb8DEIL55jgiqpUoBCOIGnhHp/8zoW5imc5qhA2e9OENlH4DChjz8gNZr7LsDzWWdIS5qTYKwxRQ=="></script>
+  <script type="text/javascript" src="/js/process.min.330c9c7ed3478d29ddc83242e05f3636088799f250f724e0eee3b88057e4e288861cf148972d2ac1ed5972c27193c1c919d768bf5e52f6ef01d3abc3b16df7c2.js" integrity="sha512-MwycftNHjSndyDJC4F82NgiHmfJQ9yTg7uO4gFfk4oiGHPFIly0qwe1ZcsJxk8HJGddov15S9u8B06vDsW33wg=="></script>
   
   
 </footer><div
